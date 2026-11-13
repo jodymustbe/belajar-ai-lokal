@@ -2,8 +2,8 @@
 Lagi ngulik AI ae nih, kalau semisal kan seru dilanjut sampai bikin SLM MCP atau yang seru-seru lainnya, biar niat makanya ditaruh di github, sekiranya mengganggu block ae bre
 
 
-'''
-├── LOG.md
+```
+├── logbook.md
 ├── 01-ollama/
 ├── 02-teori-llm/
 ├── 03-llamacpp-gguf/
