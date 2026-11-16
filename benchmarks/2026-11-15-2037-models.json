@@ -1,0 +1,86 @@
+{
+  "ollama": "0.40.16",
+  "options": {
+    "temperature": 0,
+    "num_ctx": 4096,
+    "seed": 1
+  },
+  "results": [
+    {
+      "model": "qwen3:4b",
+      "gpu_pct": 66,
+      "vram_mb": 2315,
+      "decode_tok_s": 17.3,
+      "prefill_s": 0.34,
+      "tool_name_acc": 90,
+      "tool_full_acc": 90,
+      "tool_latency_s": 47.32,
+      "tool_fails": [
+        {
+          "prompt": "Berapa 17*23?",
+          "catatan": "tidak memanggil tool"
+        }
+      ]
+    },
+    {
+      "model": "qwen3.5:2b-q4_K_M",
+      "gpu_pct": 100,
+      "vram_mb": 2277,
+      "decode_tok_s": 82.9,
+      "prefill_s": 0.17,
+      "tool_name_acc": 90,
+      "tool_full_acc": 90,
+      "tool_latency_s": 2.82,
+      "tool_fails": [
+        {
+          "prompt": "Tolong tampilkan file data/sensor.csv",
+          "catatan": "tidak memanggil tool"
+        }
+      ]
+    },
+    {
+      "model": "phi4-mini",
+      "gpu_pct": 64,
+      "vram_mb": 2299,
+      "decode_tok_s": 18.4,
+      "prefill_s": 0.34,
+      "tool_name_acc": 20,
+      "tool_full_acc": 20,
+      "tool_latency_s": 8.14,
+      "tool_fails": [
+        {
+          "prompt": "Berapa 17*23?",
+          "catatan": "tidak memanggil tool"
+        },
+        {
+          "prompt": "Hitung (120+45)/3",
+          "catatan": "tidak memanggil tool"
+        },
+        {
+          "prompt": "Berapa 2 pangkat 10?",
+          "catatan": "tidak memanggil tool"
+        },
+        {
+          "prompt": "Berapa 15 persen dari 2400?",
+          "catatan": "tidak memanggil tool"
+        },
+        {
+          "prompt": "Berapa rata-rata kelembapan tanah di lahan A selama 3 hari terakhir?",
+          "catatan": "tidak memanggil tool"
+        },
+        {
+          "prompt": "Cek kelembapan tanah lahan B untuk 7 hari terakhir.",
+          "catatan": "tidak memanggil tool"
+        },
+        {
+          "prompt": "Baca isi file catatan.txt",
+          "catatan": "tidak memanggil tool"
+        },
+        {
+          "prompt": "Tolong tampilkan file data/sensor.csv",
+          "catatan": "tidak memanggil tool"
+        }
+      ]
+    }
+  ]
+}
