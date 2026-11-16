@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer
 
 # Hanya mengunduh file tokenizer (beberapa MB), bukan bobot model penuh
-MODEL_ID = "Qwen/Qwen2.5-3B-Instruct"
+MODEL_ID = "Qwen/Qwen3.5-2B"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
 
 teks_en = (
